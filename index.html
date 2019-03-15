@@ -20,11 +20,12 @@
         <link rel="stylesheet" href="css/screen.css">
     </head>
     <body>
-        <header>
-            <p><time datetime="2018-17-02">17 februari 2018</time></p>
+        <article class="c-article">
+        <header class="c-article__header">
+            <p class="c-type-meta-u-margin-bottom-xs"><time datetime="2018-17-02">17 februari 2018</time></p>
             <h1>Balancing Line Length And Font Size In Responsive Web Design</h1>
         </header>
-        <figure>
+        <figure class="c-article__image">
             <picture>
                 <source srcset="img/picture@2x.jpg" media="(min-width: 1200px)">
                 <source srcset="img/picture.jpg" media="(min-width: 992px)">
@@ -33,6 +34,24 @@
                 <img srcset="img/picture-square@2x.jpg" alt="Picture of girl reading on a tablet">
             </picture>
         </figure>
+
+        <div class="c-article__body">
+            <div class="c-article__author">
+            <figure class="c-author">
+                <img class="c-author_image" src="img/avatar.jpg" alt="Simon Coudeville">
+                <figcaption class="c-author_caption">
+                    <h3 class="c-author_name">Simon Coudeville</h3>
+                    <p class="c-author_meta">
+                        User Interface Designer
+                        <span>
+                            <span></span>
+                        </span>
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="c-article__content">
+            <div class="u-max-width-sm">
         <p>
             As we refine our methods of responsive web design,* we’ve increasingly focus*ed on measure (another word for “line length”) and its relationship to how people read. The popularization of the “ideal measure” has led to advice such as “Increase font size for large screens and reduce font size for small screens.” While a good measure does improve the reading experience, it’s only one rule for good typography. Another rule is to maintain a comfortable font size.
         </p>
